@@ -34,60 +34,27 @@ const addElement = () =>{
             y: 1,
             z: 1,
         },
-        Extra: () => {
+        Game: () => {
             
-            /*rolando*/
-            steps.push(60);
-            animationType.push({movementType: 'rolar', value: -1});
-
-            steps.push(30);
-            animationType.push({movementType: 'quicar', value: 0.8});
-            steps.push(25);
-            animationType.push({movementType: 'quicar', value: 0});
-            steps.push(30);
-            animationType.push({movementType: 'quicar', value: -0.8}); 
-            /*quicando pra frente*/
-            for(i = 0; i < 3; i++) {
-                steps.push(30);
-                animationType.push({movementType: 'quicar2', value: 0.8});
-                steps.push(1);
-                animationType.push({movementType: 'quicar2', value: 0});
-                steps.push(30);
-                animationType.push({movementType: 'quicar2', value: -0.8}); 
-            }
-            /*quicando*/
-            for(i = 0; i < 2; i++) {
-                steps.push(30);
-                animationType.push({movementType: 'quicar', value: 0.8});
-                steps.push(1);
-                animationType.push({movementType: 'quicar', value: 0});
-                steps.push(30);
-                animationType.push({movementType: 'quicar', value: -0.8});
-            } 
-            steps.push(30);
-            animationType.push({movementType: 'quicar', value: 0.8});
-            steps.push(30);
-            animationType.push({movementType: 'arremessar2', value: 1});
-            steps.push(30);
-            animationType.push({movementType: 'quicar2', value: -0.8}); 
-            for(i = 0; i < 3; i++) {
-                steps.push(30);
-                animationType.push({movementType: 'quicar2', value: 0.8});
-                steps.push(1);
-                animationType.push({movementType: 'quicar2', value: 0});
-                steps.push(30);
-                animationType.push({movementType: 'quicar2', value: -0.8}); 
-            }
-            /*quicando*/
-            for(i = 0; i < 2; i++) {
-                steps.push(30);
-                animationType.push({movementType: 'quicar', value: 0.8});
-                steps.push(1);
-                animationType.push({movementType: 'quicar', value: 0});
-                steps.push(30);
-                animationType.push({movementType: 'quicar', value: -0.8});
-            }    
-
+            rolar(60, -1);
+            levantar(0.8);
+            segurar(25);
+            quicar(1, 0);
+            quicar(3, 1);
+            quicar(2, 0);
+            segurar(5);
+            arremessar(30, 1);
+            quicar(3, 1); 
+            quicar(1, 0);
+            segurar(10);
+            arremessar(30, -1);
+            quicar(3, 2);
+            quicar(1, 0);
+            segurar(5);
+            arremessar(10, -1);
+            segurar(15);
+            arremessar(30, -1);
+            quicar(2, 0);
         },
     };
 

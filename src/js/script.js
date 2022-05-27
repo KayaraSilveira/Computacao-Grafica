@@ -70,6 +70,7 @@ function main() {
           requestAnimationFrame(render);
         }
     } else {
+      habilitar();
       requestAnimationFrame(render);
     }
   }

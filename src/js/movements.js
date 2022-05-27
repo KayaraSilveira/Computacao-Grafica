@@ -13,24 +13,21 @@ const animation = (object) => {
             object.translation.y += animationType[count].value; 
             break;
 
-        case 'quicar2':
+        case 'quicar1':
             object.translation.y += animationType[count].value; 
             object.translation.x += 0.25;
+            break;
+
+        case 'quicar2':
+            object.translation.y += animationType[count].value; 
+            object.translation.x -= 0.25;
             break;
 
         case 'arremessar':
             break;
 
-        case 'arremessar2':
+        case 'arremessar1':
             object.translation.x += animationType[count].value;
-            break;
-
-        case 'positiony':
-            object.translation.y = animationType[count].value; 
-            break;
-
-        case 'positionx':
-            object.translation.x = animationType[count].value; 
             break;
     }
 };

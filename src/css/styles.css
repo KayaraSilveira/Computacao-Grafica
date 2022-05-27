@@ -43,7 +43,7 @@ canvas {
   
 }
 
-#next button, #start {
+#next button, #start, #start2, #skip button {
   color: #8f002e;
   font-size: 22px;
   font-family: 'Fredoka One', cursive;
@@ -54,7 +54,7 @@ canvas {
   height: 40px;
 }
 
-#next button:hover, #start {
+#next button:hover, #start:hover, #start2:hover, #skip button:hover {
   color: white;
   background-color: #637400;
 }
@@ -62,6 +62,23 @@ canvas {
 #start {
   width: 100px;
   margin: 50px auto;
+}
+
+#start2 {
+  width: 200px;
+  margin: 50px auto;
+}
+
+#skip button {
+  position: absolute;
+  top: 92px;
+  right: 20px;
+  width: 80px;
+}
+
+#start2:disabled {
+  background: #ccc;
+  color: rgb(105, 104, 104);
 }
 
 #personagem {
